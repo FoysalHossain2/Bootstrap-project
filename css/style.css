@@ -1,0 +1,440 @@
+ @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Tilt+Warp&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6, a , p , div ,img , li {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-primary: #1C1E53;
+    --bg-secondary: #F4F6FC;
+    --button-color: #FCD980;
+    --icon-color: #2405F2;
+    --poppins: 'Poppins', sans-serif;
+    --white: #FFF;
+    --Dark-blue: #282938;
+}
+
+/*--------------------------------------
+      navbar section design start
+----------------------------------------*/
+
+#header-navbar-section {
+    padding: 10px 0;
+    background-color: var(--bg-primary);
+}
+
+#header-navbar-section .custom-nav ul {
+    padding-right: 20px;
+}
+
+#header-navbar-section .custom-nav ul li a {
+    color: #BBBBCB;
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+    margin-right: 15px;
+}
+
+#header-navbar-section .btn a {
+    color: var(--white);
+    font-family: var(--poppins);
+    padding: 16px 48px;
+    border-radius: 41px;
+    border: 2px solid rgba(244, 246, 252, 0.37);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+#header-navbar-section .btn a:hover {
+    background-color: var(--button-color);
+    color: #282938;
+}
+/*--------------------------------------
+      navbar section design end
+----------------------------------------*/
+
+/*--------------------------------------
+      banner section design start
+----------------------------------------*/
+#banner-section {
+    background-color: var(--bg-primary);
+    padding: 210px 0;
+}
+
+
+#banner-section .banner-left-text h1 {
+    color: var(--white);
+    font-family: var(--poppins);
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px; 
+}
+
+#banner-section .banner-left-text p {
+    color: var(--white);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; 
+    margin-top: 21px;
+}
+
+#banner-section  .View-our-work a {
+    color: var(--Dark-blue);
+    color: #1B1C2B;
+    font-family: var(--poppins);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px; 
+    padding: 11px 56px;
+    background-color: var(--button-color);
+    border-radius: 41px;
+    display: inline-block;
+}   
+
+#banner-section  .View-Pricing a {
+    color: var(--white);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width:991px) {
+    #banner-section .btn-wrapper{
+        flex-direction: column;
+    }
+    #banner-section  .banner-right-image img {
+        padding-top: 100px;
+    }
+
+    #header-navbar-section .btn  {
+        width: 100%;
+    }
+}
+/*--------------------------------------
+      banner section design end
+----------------------------------------*/
+/*--------------------------------------
+      work section design start
+----------------------------------------*/
+#work-part-section {
+    padding: 128px 0;
+    background-color: var(--bg-secondary);
+}
+
+#work-part-section .work-left-info h1 {
+    color: var(--Dark-blue), #282938;
+    font-family: var(--poppins);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+#work-part-section .work-left-info p {
+    color: var(--Dark-blue), #282938;
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.7;
+}
+
+/* #work-part-section .card-inner {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+} */
+
+#work-part-section .work-left-info a,i  {
+    color: #2405F2;
+    font-family: var(--poppins);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#work-part-section .card-inner h3 {
+    color: var(--Dark-blue), #282938;
+    font-family: var(--poppins);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px; 
+    margin-top: 16px;
+}
+
+
+#work-part-section .card-inner p {
+    color: var(--Dark-blue), #282938;
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; 
+    opacity: 0.7;
+    margin-top: 8;
+}
+
+@media (max-width:991px) {
+    #work-part-section .work-left-info .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #work-part-section .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container-items {
+        margin-top: 50px;
+    }
+}
+/*--------------------------------------
+      work section design end
+----------------------------------------*/
+/*--------------------------------------
+      project section design start
+----------------------------------------*/
+
+#project-section .project-header-part h1 {
+    color: var(--Dark-blue);
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+}
+
+#project-section .project-header-part .view-more a  {
+    color: var(--Dark-blue);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+#project-section .project-header-part .view-more i {
+    color: var(--Dark-blue);
+}
+
+#project-section .bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 883px;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+/*bg image overlay design 1 start */
+#project-section .overlay {
+    position: absolute;
+    background-image: linear-gradient( to top, rgba(28, 30, 83, 1), rgba(28, 30, 83, 0.42));
+    width: 47%;
+    height: 100%;
+}
+
+#project-section .overlay h3 {
+    margin-top: 312px;
+    margin-left: 48px;
+    color: var(--white);
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+
+#project-section .overlay p {
+    margin-top: 16px;
+    margin-left: 48px;
+    color: var(--white);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+
+}
+
+#project-section .overlay a {
+    margin-left: 48px;
+    margin-top: 40px;
+    color: var(--button-color);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+}
+
+#project-section .overlay i {
+    color: var(--button-color);
+}
+/*bg image overlay design 1 end */
+
+/* bg image overlay design 2 start */
+ #project-section .bg-portfolio-image  {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    width: 404px;
+    height: 284px;
+    position: relative;
+} 
+
+#project-section .bg-portfolio-image .overlay2 {
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(28, 30, 83, 1), rgba(28, 30, 83, 0.42));
+    width: 100%;
+    height: 100%;
+}
+
+#project-section .bg-portfolio-image .overlay2 h3 {
+    margin-top: 129px;
+    margin-left: 56px;
+    color: var(--white);
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+}
+
+#project-section .bg-portfolio-image .overlay2 a {
+    margin-top: 10px;
+    margin-left: 56px;
+    color: var(--button-color);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+#project-section .bg-portfolio-image .overlay2 i {
+    color: var(--button-color);
+}
+/* bg image overlay design 2 end */
+
+@media (max-width:991px) {
+    #project-section .overlay h3 {
+        margin-top: 180px;
+    }
+}
+
+@media (max-width:776px) {
+    #project-section .overlay h3 {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width:510px) {
+    #project-section .overlay h3 {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width:992px) {
+    #project-section .overlay h3 {
+        margin-top: 252px;
+    }
+}
+/*--------------------------------------
+      project section design end
+----------------------------------------*/
+/*--------------------------------------
+/*-------------------------------------------
+      problem solve  section design start
+---------------------------------------------*/ 
+#problem-solve-part {
+    padding: 128px 0;
+    background-color: var(--bg-secondary);
+}
+
+#problem-solve-part h5 {
+    color: var(--Dark-blue);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+#problem-solve-part h1 {
+    color: var(--Dark-blue);
+    font-family: var(--poppins);
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 64px;
+}
+
+ #problem-solve-part  .card-inner-section {
+    background-color: var(--white);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#problem-solve-part  .card-inner-section:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#problem-solve-part  .card-inner-section img {
+    padding-left: 48px;
+    padding-top: 48px;
+}
+
+#problem-solve-part  .card-inner-section h2 {
+    color: var(--Dark-blue);
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-top: 22px;
+    padding-left: 48px;
+}
+
+#problem-solve-part  .card-inner-section p {
+    color: var(--Dark-blue);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 12px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 48px;
+    opacity: 0.7;
+}
+
+ /* @media (max-width:991px) {
+    #problem-solve-part  .card-inner-section {
+        width: 100%;
+        
+    }
+}   */
